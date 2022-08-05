@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+}
+
+.active {
+  display: block !important;
+}
+
+.disabled {
+  display: none;
+}
+
+.container {
+  width: 1377px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #eff0f1;
+  border-radius: 22px;
+  transition: all 0.6s ease;
+}
+.container .row {
+  padding: 1.25rem;
+}
+.container .row .title {
+  font-size: 1.25rem;
+}
+.container .row .categories {
+  display: flex;
+  gap: 7px;
+  margin-top: 24px;
+}
+.container .row .categories .category-item {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.container .row .categories .category-item:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.container .row .categories .category-item:active {
+  transform: scale(0.75);
+}
+.container .row .image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.container .row .image-cards .card {
+  max-width: 437px;
+  padding: 1.1rem;
+  background-color: #fff;
+  border-radius: 32px;
+}
+.container .row .image-cards .card .card-image:hover, .container .row .image-cards .card .thumbnail:hover img {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.container .row .image-cards .card .card-content {
+  padding: 0.325rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container .row .image-cards .card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+.container .row .image-cards .card .card-footer .card-title {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .row .image-cards .card .card-footer .card-title:hover {
+  opacity: 0.8;
+}
+.container .row .image-cards .card .card-footer .card-image-size .wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.container .row .image-cards .card .card-footer .card-image-size .wrapper:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1376px) {
+  body {
+    background-color: #eff0f1;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .container .row {
+    padding: 0 !important;
+  }
+  .container .row .title {
+    text-align: center;
+  }
+  .container .row .categories {
+    margin-top: 0 !important;
+    justify-content: center;
+  }
+  .container .row .image-cards {
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .container .row .image-cards .card {
+    max-width: 210px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .container .row .image-cards {
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .container .row .image-cards .card {
+    max-width: 170px;
+  }
+}/*# sourceMappingURL=style.css.map */
