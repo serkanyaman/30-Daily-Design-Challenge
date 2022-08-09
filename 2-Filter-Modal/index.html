@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Filter Modal UI</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="filter-wrapper">
+          <div class="row">
+            <div class="filter-header">
+              <div class="title">
+                <h1>Filter</h1>
+              </div>
+              <div class="modal-closer">
+                <svg
+                  width="37"
+                  height="37"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33 11L11 33"
+                    stroke="#BCBACF"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 11L33 33"
+                    stroke="#BCBACF"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle">
+              <h4>SEARCH BY KEYWORD</h4>
+            </div>
+            <div class="filter-search">
+              <div class="search-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 25.5C20.799 25.5 25.5 20.799 25.5 15C25.5 9.20101 20.799 4.5 15 4.5C9.20101 4.5 4.5 9.20101 4.5 15C4.5 20.799 9.20101 25.5 15 25.5Z"
+                    stroke="#BCBACF"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.5 31.5L22.5 22.5"
+                    stroke="#BCBACF"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="search-box">
+                <input type="text" placeholder="Search jobs" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="filter-options">
+              <div class="subtitle">
+                <h4>VIEW</h4>
+              </div>
+              <div class="options-ws">
+                <label for="a">
+                  <input type="radio" name="a" id="a" checked/>
+                  <span class="radio-text"> All job posts </span>
+                </label>
+              </div>
+              <div class="options-ws">
+                <label for="b">
+                  <input type="radio" name="a" id="b" />
+                  <span class="radio-text">
+                  Active job posts
+                </span>
+                </label>
+              </div>
+              <div class="options-ws">
+                <label for="c">
+                  <input type="radio" name="a" id="c" />
+                  <span class="radio-text">
+                  Archived job posts
+                </span>
+                </label>
+              </div>
+              <div class="filter-check">
+                <div class="subtitle">
+                    <h4>INCLUDE</h4>
+                  </div>
+                  <div class="options-ws">
+                  <label for="d">
+                    <input type="checkbox" id="d" /> Jobs Shared With Me
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="filter-btn">
+              <button id="ss" type="submit">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+    </div>
+
+    <footer>
+        <div>
+            Made by <span>
+                <a href="https://www.linkedin.com/in/serkanyamanz/" target="_blank">Serkan Yaman</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
