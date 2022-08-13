@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #171d3c;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+}
+
+.cart-wrapper {
+  padding: 60px;
+  border-radius: 42px;
+  border: 1px solid rgb(192, 183, 183);
+  border-bottom-width: 4px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.cart-wrapper .title h2 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+}
+.cart-wrapper .id {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+}
+.cart-wrapper .cart-added-product {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-top: 32px;
+}
+.cart-wrapper .cart-added-product .product-image {
+  max-width: 108px;
+  max-width: 108px;
+}
+.cart-wrapper .cart-added-product .product-info {
+  max-width: 281px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171d3c;
+}
+.cart-wrapper .cart-added-product .product-info .product-stock {
+  display: inline-block;
+  padding: 4px 16px;
+  background-color: #81bd45;
+  border-radius: 23px;
+  color: #fff;
+  margin-top: 8px;
+}
+.cart-wrapper .cart-added-product .product-info .order-count {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  margin-top: 20px;
+}
+.cart-wrapper .cart-added-product .product-info .order-count .minus-piece,
+.cart-wrapper .cart-added-product .product-info .order-count .add-piece {
+  background: #e0f2fa;
+  border-radius: 6.55034px;
+  padding: 0.25rem 0.55rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+.cart-wrapper .cart-added-product .product-info .order-count .minus-piece:hover,
+.cart-wrapper .cart-added-product .product-info .order-count .add-piece:hover {
+  background-color: #cde7f1;
+  cursor: pointer;
+}
+.cart-wrapper .cart-added-product .product-info .order-count .minus-piece:active,
+.cart-wrapper .cart-added-product .product-info .order-count .add-piece:active {
+  transform: scale(0.9);
+}
+.cart-wrapper .cart-added-product .product-info .order-count .product-piece input {
+  border: 0.818792px solid #c6cad2;
+  border-radius: 6.55034px;
+  outline: 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.cart-wrapper .separator {
+  background-color: #c6cad2;
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin: 32px 0;
+}
+.cart-wrapper .delivery-info,
+.cart-wrapper .vat-info,
+.cart-wrapper .total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.cart-wrapper .delivery-info .package-type,
+.cart-wrapper .vat-info .package-type,
+.cart-wrapper .total-price .package-type {
+  line-height: 24px;
+}
+.cart-wrapper .delivery-info .delivery-cost,
+.cart-wrapper .delivery-info .vat-cost,
+.cart-wrapper .delivery-info .nok-info,
+.cart-wrapper .delivery-info .nok-price,
+.cart-wrapper .vat-info .delivery-cost,
+.cart-wrapper .vat-info .vat-cost,
+.cart-wrapper .vat-info .nok-info,
+.cart-wrapper .vat-info .nok-price,
+.cart-wrapper .total-price .delivery-cost,
+.cart-wrapper .total-price .vat-cost,
+.cart-wrapper .total-price .nok-info,
+.cart-wrapper .total-price .nok-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cart-wrapper .gift-card-promotion {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #4378ff;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.cart-wrapper .gc-wrapper {
+  position: relative;
+}
+.cart-wrapper .gc-wrapper .gift-card-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  transition: all 0.4s ease;
+  transform: translateX(-135%);
+}
+.cart-wrapper .gc-wrapper .gift-card-box input {
+  outline: 0;
+  width: 195px;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #c6cad2;
+  transition: all 0.1s linear;
+}
+.cart-wrapper .gc-wrapper .gift-card-box input:focus {
+  border: 1px solid #9a9ca0;
+  border-bottom-width: 2px;
+}
+.cart-wrapper .gc-wrapper .gift-card-box button {
+  width: 195px;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  border: 1px solid #c6cad2;
+  outline: 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.cart-wrapper .gc-wrapper .gift-card-box button:hover {
+  border: 1px solid #9a9ca0;
+}
+.cart-wrapper .gc-wrapper .gift-card-box button:active {
+  transform: scale(0.95);
+  font-weight: bold;
+}
+.cart-wrapper .gc-wrapper .gift-card-box.active {
+  transform: translateX(0%);
+  position: relative;
+}
+.cart-wrapper .checkout-btn button {
+  width: 100%;
+  padding: 16px 0;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  background-color: #4378ff;
+  border-radius: 32px;
+  margin-top: 18px;
+}
+.cart-wrapper .checkout-btn button:hover {
+  background-color: #3f71f0;
+}
+.cart-wrapper .checkout-btn button:active {
+  background-color: #2f61e0;
+}
+
+@media screen and (max-width: 530px) {
+  .container {
+    padding: 1rem !important;
+  }
+  .cart-wrapper {
+    padding: 26px !important;
+  }
+  .cart-wrapper .cart-added-product {
+    flex-direction: column !important;
+  }
+  .cart-wrapper .product-info {
+    text-align: center;
+  }
+  .cart-wrapper .order-count {
+    justify-content: center;
+  }
+  footer {
+    bottom: -50px !important;
+  }
+  footer span {
+    font-size: 1.4rem !important;
+  }
+}
+footer {
+  z-index: 3;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer span {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+}
+
+footer span a {
+  transition: all 0.25s ease;
+}
+
+footer span a:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */
